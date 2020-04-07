@@ -1,0 +1,19 @@
+{
+  "name": "vuepress-plugin-headertags",
+  "version": "1.0.0",
+  "description": "add user defined header tags to vuepress page",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+
+  "keywords": [
+    "vue",
+    "vuepress",
+    "generator"
+  ],
+  "license": "MIT",
+
+  "dependencies": {
+  }
+}
