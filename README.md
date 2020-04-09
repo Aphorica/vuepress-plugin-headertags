@@ -2,7 +2,7 @@
 
 > plugin for vuepress to add header tags
 
-Add  `<link rel='headertags' ...>` to your vuepress site.
+Adds specified header tags to rendered pages
 
 ## Install
 
