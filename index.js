@@ -1,7 +1,7 @@
-const { path } = require('@vuepress/shared-utils')
+const { path } = require('path')
 // import resolve from 'path'
 
-module.exports = options => ({
+module.exports = (options) => ({
   define () {
     return {
       headerTags: options.headerTags || []
