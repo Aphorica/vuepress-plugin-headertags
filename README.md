@@ -1,8 +1,8 @@
-# vuepress-plugin-canonical
+# vuepress-plugin-headertags
 
-> canonical plugin for vuepress
+> plugin for vuepress to add header tags
 
-Add  `<link rel='canonical' ...>` to your vuepress site.
+Add  `<link rel='headertags' ...>` to your vuepress site.
 
 ## Install
 

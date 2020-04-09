@@ -1,4 +1,5 @@
 const { path } = require('@vuepress/shared-utils')
+// import resolve from 'path'
 
 module.exports = options => ({
   define () {
