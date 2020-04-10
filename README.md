@@ -4,29 +4,33 @@
 
 Adds specified header tags to rendered pages
 
+## Rationale
+Had a use case where I need to add headers to a page.  There is a somewhat easy way to add headers to all pages using the 'head' tag in the .vuepress/config.js file, but no easy way to tune it for specific pages.
+
+You will need to fork or copy this repo and make modifications to your copy to add tuning code.  For an example of how this is done, look at this plugin: [](vuepress-plugin-netlifycms).  Look in the 'HeaderTags.vue' to see how the action is filtered to only the main ("/") page.
+
 ## Install
 
 ```
-npm i vuepress-plugin-canonical -D
+yarn add vuepress-plugin-headertags -D
 ```
 
+(Note the __-D__ is _very_ important...)
+
 ## Usage
-Read [How to use vuepress Plugin](https://v1.vuepress.vuejs.org/plugin/using-a-plugin.html) first, modify your `.vuepress/config.js`.
-```js
+In .vuepress/config.js:
+```
 module.exports = {
   plugins: [
     [
-      'vuepress-plugin-canonical',
+      'vuepress-plugin-headerTags',
       {
-        baseURL: 'https://mina.wiki', // base url for your canonical link, optional, default: ''
-        stripExtension: true // strip '.html' , optional, default: false
+        headerTags: ['<script src="somewhere.js"></script>',
+                     '<link rel="somelink"></link>',
+                      (etc)
+                      ]
       }
     ]
   ]
 }
 ```
-
-## Refrences
-
-- [add extra tags to <head> per page](https://github.com/vuejs/vuepress/issues/894)
-- [globalUIComponents](https://v1.vuepress.vuejs.org/plugin/option-api.html#globaluicomponents)

@@ -1,6 +1,7 @@
 {
-  "name": "vuepress-plugin-headertags",
-  "version": "1.0.4",
+  "name": "@aphorica/vuepress-plugin-headertags",
+  "version": "1.0.1",
+  "repository": "github:Aphorica/vuepress-plugin-headertags.git",
   "description": "add user defined header tags to vuepress page",
   "main": "index.js",
   "publishConfig": {
